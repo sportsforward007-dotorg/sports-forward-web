@@ -28,7 +28,7 @@ const StoryPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900">
       {/* Progress Bar */}
-      <Navigation currentPath="/our-story" />
+      <Navigation currentPath="/sports-forward-web/our-story" />
       <div className="fixed top-0 left-0 w-full h-1 bg-white/10 z-50">
         <div 
           className="h-full bg-gradient-to-r from-teal-500 to-orange-500 transition-all duration-300"

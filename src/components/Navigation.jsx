@@ -11,12 +11,15 @@ const Navigation = ({ currentPath = '/' }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // FIX: Add your repo name here
+  const basePath = '/sports-forward-web';
+
   const navLinks = [
-    { name: 'HOME', path: '/' },
-    { name: 'PROJECTS', path: '/projects' },
-    { name: 'ABOUT US', path: '/about-us' },
-    { name: 'OUR TEAM', path: '/our-team' },
-    { name: 'OUR STORY', path: '/our-story' },
+    { name: 'HOME', path: `${basePath}/` },
+    { name: 'PROJECTS', path: `${basePath}/projects` },
+    { name: 'ABOUT US', path: `${basePath}/about-us` },
+    { name: 'OUR TEAM', path: `${basePath}/our-team` },
+    { name: 'OUR STORY', path: `${basePath}/our-story` },
   ];
 
   return (
@@ -25,7 +28,7 @@ const Navigation = ({ currentPath = '/' }) => {
     } border-b border-white/10`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          <a href="/" className="flex items-center gap-3 group">
+          <a href={`${basePath}/`} className="flex items-center gap-3 group">
             <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-orange-400 rounded-full flex items-center justify-center transition-transform group-hover:scale-110">
               <span className="text-2xl">🏆</span>
             </div>
@@ -47,7 +50,7 @@ const Navigation = ({ currentPath = '/' }) => {
               </a>
             ))}
             <a
-              href="/donations"
+              href={`${basePath}/donations`}
               className="flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-teal-500/50 transition-all duration-300 hover:scale-105"
             >
               <Heart className="w-4 h-4" />
@@ -66,22 +69,24 @@ const Navigation = ({ currentPath = '/' }) => {
         <div className={`md:hidden transition-all duration-300 overflow-hidden ${
           isOpen ? 'max-h-96 pb-6' : 'max-h-0'
         }`}>
-          {navLinks.map((link) => (
-            <a
-              key={link.path}
-              href={link.path}
-              className={`block py-3 px-4 rounded-lg transition-all ${
-                currentPath === link.path
-                  ? 'text-white bg-teal-500/20 border-l-4 border-teal-400'
-                  : 'text-gray-300 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              {link.name}
+          <div className="space-y-3 mt-3">
+            {navLinks.map((link) => (
+              <a
+                key={link.path}
+                href={link.path}
+                className={`block py-3 px-4 rounded-lg transition-all ${
+                  currentPath === link.path
+                    ? 'text-white bg-teal-500/20 border-l-4 border-teal-400'
+                    : 'text-gray-300 hover:text-white hover:bg-white/5'
+                }`}
+              >
+                {link.name}
+              </a>
+            ))}
+            <a href={`${basePath}/donations`} className="block mt-4 px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full text-white font-semibold text-center">
+              ❤️ DONATE
             </a>
-          ))}
-          <a href="/donations" className="block mt-4 px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full text-white font-semibold text-center">
-            ❤️ DONATE
-          </a>
+          </div>
         </div>
       </div>
     </nav>

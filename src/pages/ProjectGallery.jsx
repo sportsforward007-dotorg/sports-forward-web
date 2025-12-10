@@ -39,7 +39,7 @@ const ProjectGalleryPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900">
       {/* Hero Section */}
-      <Navigation currentPath="/projects" />
+      <Navigation currentPath="/sports-forward-web/projects" />
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-600/20 to-orange-600/20" />
         <div className="absolute inset-0 overflow-hidden">

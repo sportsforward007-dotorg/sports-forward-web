@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Footer = () => {
+  // FIX: Add your repo name
+  const basePath = '/sports-forward-web';
+
   return (
     <footer className="py-12 px-6 bg-black/30 backdrop-blur-lg border-t border-white/10">
       <div className="max-w-7xl mx-auto">
@@ -20,10 +23,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-3">Quick Links</h4>
             <div className="space-y-2">
-              <a href="/about-us" className="block text-gray-400 hover:text-teal-400 transition-colors">About Us</a>
-              <a href="/projects" className="block text-gray-400 hover:text-teal-400 transition-colors">Projects</a>
-              <a href="/our-team" className="block text-gray-400 hover:text-teal-400 transition-colors">Our Team</a>
-              <a href="/donations" className="block text-gray-400 hover:text-teal-400 transition-colors">Donate</a>
+              <a href={`${basePath}/about-us`} className="block text-gray-400 hover:text-teal-400 transition-colors">About Us</a>
+              <a href={`${basePath}/projects`} className="block text-gray-400 hover:text-teal-400 transition-colors">Projects</a>
+              <a href={`${basePath}/our-team`} className="block text-gray-400 hover:text-teal-400 transition-colors">Our Team</a>
+              <a href={`${basePath}/donations`} className="block text-gray-400 hover:text-teal-400 transition-colors">Donate</a>
             </div>
           </div>
           
