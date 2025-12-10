@@ -11,7 +11,7 @@ import ProjectGallery from './pages/ProjectGallery'
 
 function App() {
   return (
-    <Router basename="/sports-forward">
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
