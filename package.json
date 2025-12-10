@@ -1,7 +1,7 @@
 {
   "name": "sports-forward-vite",
   "private": true,
-  "homepage": "https://sportsforward007-dotorg.github.io/sports-forward-web/",
+  "homepage": "https://sportsforward007-dotorg.github.io/sports-forward-web",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
