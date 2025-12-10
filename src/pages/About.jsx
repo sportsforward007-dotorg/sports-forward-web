@@ -1,5 +1,7 @@
 import React from 'react';
 import { Heart, Target, Users, Lightbulb, TrendingUp, Shield, ArrowRight } from 'lucide-react';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const AboutPage = () => {
   const features = [
@@ -30,6 +32,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900">
       {/* Hero Section */}
+      <Navigation currentPath="/about-us" />
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-600/20 to-orange-600/20" />
         <div className="absolute inset-0 overflow-hidden">
@@ -229,25 +232,7 @@ const AboutPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-black/30 backdrop-blur-lg border-t border-white/10">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-orange-400 rounded-full flex items-center justify-center">
-              <span className="text-2xl">🏆</span>
-            </div>
-            <div className="text-left">
-              <h3 className="text-white font-bold text-lg">Sports Forward</h3>
-              <p className="text-gray-400 text-sm">501(c)(3) Inc.</p>
-            </div>
-          </div>
-          <p className="text-gray-400 mb-4">
-            <a href="mailto:sportsforwardfoundation@gmail.com" className="hover:text-teal-400 transition-colors">
-              sportsforwardfoundation@gmail.com
-            </a>
-          </p>
-          <p className="text-gray-500 text-sm">© 2024 Sports Forward Foundation. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

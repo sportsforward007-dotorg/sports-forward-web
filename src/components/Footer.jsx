@@ -1,0 +1,46 @@
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <footer className="py-12 px-6 bg-black/30 backdrop-blur-lg border-t border-white/10">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-orange-400 rounded-full flex items-center justify-center text-2xl">
+                🏆
+              </div>
+              <div>
+                <h3 className="text-white font-bold text-lg">Sports Forward</h3>
+                <p className="text-gray-400 text-sm">501(c)(3) Inc.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="text-white font-semibold mb-3">Quick Links</h4>
+            <div className="space-y-2">
+              <a href="/about-us" className="block text-gray-400 hover:text-teal-400 transition-colors">About Us</a>
+              <a href="/projects" className="block text-gray-400 hover:text-teal-400 transition-colors">Projects</a>
+              <a href="/our-team" className="block text-gray-400 hover:text-teal-400 transition-colors">Our Team</a>
+              <a href="/donations" className="block text-gray-400 hover:text-teal-400 transition-colors">Donate</a>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="text-white font-semibold mb-3">Contact</h4>
+            <a href="mailto:sportsforwardfoundation@gmail.com" className="text-gray-400 hover:text-teal-400 transition-colors">
+              sportsforwardfoundation@gmail.com
+            </a>
+          </div>
+        </div>
+        
+        <div className="border-t border-white/10 pt-8 text-center text-gray-400 text-sm">
+          <p>© 2024 Sports Forward Foundation. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

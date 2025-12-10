@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, MapPin, Lightbulb, TrendingUp, ArrowRight, Sparkles } from 'lucide-react';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const StoryPage = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -26,6 +28,7 @@ const StoryPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900">
       {/* Progress Bar */}
+      <Navigation currentPath="/our-story" />
       <div className="fixed top-0 left-0 w-full h-1 bg-white/10 z-50">
         <div 
           className="h-full bg-gradient-to-r from-teal-500 to-orange-500 transition-all duration-300"
@@ -259,25 +262,7 @@ const StoryPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-black/30 backdrop-blur-lg border-t border-white/10">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-orange-400 rounded-full flex items-center justify-center">
-              <span className="text-2xl">🏆</span>
-            </div>
-            <div className="text-left">
-              <h3 className="text-white font-bold text-lg">Sports Forward</h3>
-              <p className="text-gray-400 text-sm">501(c)(3) Inc.</p>
-            </div>
-          </div>
-          <p className="text-gray-400 mb-4">
-            <a href="mailto:sportsforwardfoundation@gmail.com" className="hover:text-teal-400 transition-colors">
-              sportsforwardfoundation@gmail.com
-            </a>
-          </p>
-          <p className="text-gray-500 text-sm">© 2024 Sports Forward Foundation. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
