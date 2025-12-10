@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // <-- CHANGE THIS! Use relative paths
+  base: '/sports-forward-web/', // <-- CHANGE THIS! Use relative paths
   build: {
     outDir: 'dist',
   },
