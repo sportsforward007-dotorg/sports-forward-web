@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, Download, Share2, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -48,13 +49,13 @@ const ProjectGalleryPage = () => {
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto">
-          <a
-            href="/projects"
+          <Link
+            to="/projects"
             className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors mb-8"
           >
             <ArrowLeft className="w-5 h-5" />
             Back to Projects
-          </a>
+          </Link>
           
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-teal-300 via-white to-orange-300 bg-clip-text text-transparent">
@@ -219,18 +220,18 @@ const ProjectGalleryPage = () => {
               Your donation can help us create more opportunities for children across India
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/donations"
+              <Link
+                to="/donations"
                 className="px-8 py-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full text-white font-semibold text-lg shadow-xl hover:shadow-teal-500/50 transition-all duration-300 hover:scale-105"
               >
                 Donate Now
-              </a>
-              <a
-                href="/projects"
+              </Link>
+              <Link
+                to="/projects"
                 className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white font-semibold text-lg hover:bg-white/20 transition-all duration-300"
               >
                 View All Projects
-              </a>
+              </Link>
             </div>
           </div>
         </div>
