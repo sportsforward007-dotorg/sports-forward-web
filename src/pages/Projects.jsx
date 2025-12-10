@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Calendar, Users, ExternalLink, Filter, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
