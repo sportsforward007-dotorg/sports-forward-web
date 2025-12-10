@@ -17,7 +17,7 @@ const ProjectsPage = () => {
       description: 'Partnership to build a sports recreational area in a tribal village. Included volleyball court, kabbadi court, lighting, sports equipment, and area maintenance.',
       impact: 'First sports facility in the village',
       category: 'Infrastructure',
-      galleryLink: '/p1',
+      galleryLink: '/chandala',
       fundraiserLink: 'https://www.gofundme.com/f/sports-recreation-area-in-chandala-india',
       image: '🏐'
     },
@@ -30,7 +30,7 @@ const ProjectsPage = () => {
       description: 'First organized sports program at Modern Public School. Provided basketball equipment enabling children to pursue their passion through organized play.',
       impact: 'First sports initiative in school history',
       category: 'Equipment',
-      galleryLink: '/general-1',
+      galleryLink: '/hoops',
       image: '🏀'
     },
     {
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
       description: 'Brought chess to kids in low-income families. Donated multiple chess sets, provided teacher for entire year, organized four tournaments with scholarships.',
       impact: 'Year-long chess program with tournaments',
       category: 'Equipment',
-      galleryLink: '/blank',
+      galleryLink: '/checkmate',
       image: '♟️'
     },
     {
@@ -186,13 +186,13 @@ const ProjectsPage = () => {
 
                   <div className="flex flex-wrap gap-3">
                     {project.galleryLink && (
-                      <a
-                        href={project.galleryLink}
+                      <Link
+                        to={project.galleryLink}
                         className="flex-1 px-4 py-3 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl text-white font-semibold text-center hover:shadow-lg hover:shadow-teal-500/50 transition-all duration-300 flex items-center justify-center gap-2"
                       >
                         View Gallery
                         <ExternalLink className="w-4 h-4" />
-                      </a>
+                      </Link>
                     )}
                     {project.fundraiserLink && (
                       <a
@@ -223,18 +223,18 @@ const ProjectsPage = () => {
             Help us bring sports and opportunities to more children across India
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/donations"
+            <Link
+              to="/donations"
               className="px-8 py-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full text-white font-semibold text-lg shadow-xl hover:shadow-teal-500/50 transition-all duration-300 hover:scale-105"
             >
               Donate Now
-            </a>
-            <a
-              href="/request-project"
+            </Link>
+            <Link
+              to="/request-project"
               className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white font-semibold text-lg hover:bg-white/20 transition-all duration-300"
             >
               Submit a Project
-            </a>
+            </Link>
           </div>
         </div>
       </section>
