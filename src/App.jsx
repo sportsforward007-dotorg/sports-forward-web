@@ -8,7 +8,10 @@ import OurTeam from './pages/OurTeam';
 import OurStory from './pages/OurStory';
 import Donations from './pages/Donations';
 import SubmitProject from './pages/SubmitProject';
-import ProjectGallery from './pages/ProjectGallery';
+import ChandalaProject from './pages/ChandalaProject';
+import HoopsForGrowth from './pages/HoopsForGrowth';
+import CheckmateForChange from './pages/CheckmateForChange';
+import FieldsOfOpportunity from './pages/FieldsOfOpportunity';
 
 function App() {
   return (
@@ -22,10 +25,10 @@ function App() {
         <Route path="/our-story" element={<OurStory />} />
         <Route path="/donations" element={<Donations />} />
         <Route path="/request-project" element={<SubmitProject />} />
-        <Route path="/p1" element={<ProjectGallery projectId="chandala" />} />
-        <Route path="/general-1" element={<ProjectGallery projectId="hoops" />} />
-        <Route path="/blank" element={<ProjectGallery projectId="chess" />} />
-        <Route path="/field" element={<ProjectGallery projectId="fields" />} />
+        <Route path="/p1" element={<ChandalaProject />} />
+        <Route path="/general-1" element={<HoopsForGrowth />} />
+        <Route path="/blank" element={<CheckmateForChange />} />
+        <Route path="/field" element={<FieldsOfOpportunity />} />
       </Routes>
     </Router>
   );
