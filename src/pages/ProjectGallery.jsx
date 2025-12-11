@@ -4,21 +4,12 @@ import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
-const ProjectGalleryPage = () => {
+const ProjectGalleryPage = ({ projectData }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // This would be populated with actual project images
-  const galleryImages = [
-    { id: 1, title: 'Project Site - Before', description: 'Initial state of the area', placeholder: '📸' },
-    { id: 2, title: 'Construction Phase', description: 'Building the sports facility', placeholder: '🏗️' },
-    { id: 3, title: 'Equipment Installation', description: 'Setting up sports equipment', placeholder: '⚽' },
-    { id: 4, title: 'Community Gathering', description: 'Local community participation', placeholder: '👥' },
-    { id: 5, title: 'Children Playing', description: 'Kids enjoying the new facility', placeholder: '🎉' },
-    { id: 6, title: 'Completed Project', description: 'Final state of the facility', placeholder: '✅' },
-    { id: 7, title: 'Training Session', description: 'First training sessions', placeholder: '🏃' },
-    { id: 8, title: 'Team Photo', description: 'Project team and beneficiaries', placeholder: '📷' }
-  ];
+  const galleryImages = projectData?.images || [];
 
   const openLightbox = (index) => {
     setCurrentIndex(index);
@@ -105,12 +96,12 @@ const ProjectGalleryPage = () => {
               >
                 {/* Image Placeholder */}
                 <div className="aspect-square bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <div className="text-7xl mb-3 group-hover:scale-110 transition-transform">
-                      {image.placeholder}
-                    </div>
-                    <p className="text-gray-400 text-sm font-medium">Image Placeholder</p>
-                    <p className="text-gray-500 text-xs mt-1">{image.title}</p>
+                  <div className="aspect-square overflow-hidden">
+                    <img 
+                      src={image.url} 
+                      alt={image.caption || `Gallery image ${idx + 1}`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
                   </div>
                 </div>
 
@@ -156,17 +147,17 @@ const ProjectGalleryPage = () => {
           {/* Image Container */}
           <div className="max-w-6xl max-h-[90vh] w-full">
             {/* Large Image Placeholder */}
-            <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-12 flex items-center justify-center aspect-video">
-              <div className="text-center">
-                <div className="text-9xl mb-4">{selectedImage.placeholder}</div>
-                <p className="text-gray-400 text-lg font-medium">Full Size Image Placeholder</p>
-              </div>
+            <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden">
+              <img 
+                src={selectedImage.url}
+                alt={selectedImage.caption || 'Gallery image'}
+                className="w-full h-auto max-h-[70vh] object-contain"
+              />
             </div>
 
             {/* Image Info */}
             <div className="mt-6 text-center">
-              <h2 className="text-2xl font-bold text-white mb-2">{selectedImage.title}</h2>
-              <p className="text-gray-400">{selectedImage.description}</p>
+              <h2 className="text-2xl font-bold text-white mb-2">{selectedImage.caption}</h2>
               <p className="text-gray-500 text-sm mt-2">
                 Image {currentIndex + 1} of {galleryImages.length}
               </p>
@@ -195,15 +186,9 @@ const ProjectGalleryPage = () => {
               About This Project
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
-              <p>
-                This project represents our commitment to bringing sports opportunities to underserved communities. Through the dedication of our team and the support of generous donors, we were able to transform this area into a vibrant sports facility.
-              </p>
-              <p>
-                The journey from concept to completion involved careful planning, community engagement, and hands-on construction work. Every step of the way, we kept the needs of the children at the forefront of our decisions.
-              </p>
-              <p>
-                Today, this facility serves as a beacon of hope and opportunity, providing a safe space for children to play, learn, and grow through sports.
-              </p>
+              <p className="text-gray-300">{projectData?.location || 'Project Location'}</p>
+              <p className="text-gray-300">{projectData?.year || 'Project Date'}</p>
+              <p className="text-gray-300">{projectData?.impact || 'Children Benefited'}</p>
             </div>
           </div>
         </div>
