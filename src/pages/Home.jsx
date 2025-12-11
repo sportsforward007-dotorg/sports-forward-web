@@ -178,9 +178,13 @@ const HomePage = () => {
             <div className="order-2 md:order-1">
               <div className="bg-gradient-to-br from-teal-500/20 to-orange-500/20 rounded-3xl p-8 backdrop-blur-lg border border-white/10">
                 <img 
-                  src="/images/homepage/mission-section.png"
+                  src="/sports-forward-web/images/homepage/mission-section.png"
                   alt="School children in Chandala near Ghadchiroli"
                   className="w-full h-auto rounded-2xl object-cover"
+                  onError={(e) => {
+                    console.error('Image failed to load:', e.target.src);
+                    e.target.style.border = '2px solid red';
+                  }}
                 />
               </div>
             </div>

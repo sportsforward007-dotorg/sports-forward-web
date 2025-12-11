@@ -8,46 +8,25 @@ const TeamPage = () => {
 
   const team = [
     {
-      name: 'Raj Keswani',
-      role: 'President & Founder',
-      image: '👨‍💼',
-      bio: 'Raj Keswani is a high school student attending Menlo School in Atherton, California. Growing up, Raj has always been passionate about sports, playing baseball, basketball, and football. Additionally, Raj is dedicated to giving back to the community and ensuring that the underprivileged are always represented. Raj has a deep interest in the intersection between sports, business, and law and hopes to study it in the future.',
+      name: 'Paarth Sharma',
+      role: 'President',
+      image: '/sports-forward-web/images/team/paarth_sharma.jpg',
+      bio: 'Paarth Sharma is a Cupertino High School student with a passion for sports, fitness, and learning. An avid athlete, he actively participates in track and field, cricket, and enjoys spending time at the gym. Beyond athletics, Paarth has a deep interest in design, psychology, and business. Paarth is committed to making sports accessible for underprivileged children, especially in underdeveloped and developing countries. Driven by this mission, he regularly travels to India to lead projects that provide sports equipment and promote inclusive development in schools. He stays connected with students, offering guidance and mentorship on various issues, fostering opportunities for growth and empowerment through sports.',
       color: 'from-teal-500 to-blue-500'
     },
     {
-      name: 'Gunjan Goswami Sinha',
+      name: 'Raj Keswani',
       role: 'Vice President',
-      image: '👩‍💼',
-      bio: 'Gunjan is a Certified Rehabilitation Counselor with a decade of experience in the counseling field, focusing on vocational counseling for individuals with disabilities. Early in her career she actively worked at the grassroot level in rural India. She is passionate about promoting overall health and well-being, and empowering underprivileged youth through sports. In her spare time she enjoys exploring the beautiful outdoors with her family.',
-      color: 'from-orange-500 to-pink-500'
-    },
-    {
-      name: 'Hanu Mehrotra',
-      role: 'Treasurer',
-      image: '💼',
-      bio: 'Hanu Mehrotra is VP of Corporate Finance at Visa Inc, where he oversees financial planning and analysis for Visa\'s global business. Prior to Visa, Hanu held finance leadership roles at Meta and Microsoft. He holds an MBA from the University of Iowa and Bachelors of Engineering from University of Mumbai.',
-      color: 'from-purple-500 to-indigo-500'
+      image: '/sports-forward-web/images/team/raj-keswani.png',
+      bio: 'Raj Keswani is attending Vanderbilt University. Growing up, Raj has always been passionate about sports, playing baseball, basketball, and football. Additionally, Raj is dedicated to giving back to the community and ensuring that the underprivileged are always represented. Raj has a deep interest in the intersection between sports, business, and law and hopes to study it in the future.',
+      color: 'from-teal-500 to-blue-500'
     },
     {
       name: 'Kashish Sharma',
       role: 'Secretary',
-      image: '📝',
+      image: '/sports-forward-web/images/team/kashish-sharma.jpeg',
       bio: 'Kashish Sharma is Senior Manager at Applied Materials where he leads a group to develop innovative processes for chip manufacturers. Before Applied Materials, Kashish worked at Lam Research. He holds Ph.D. in applied physics from the Eindhoven University of Technology.',
       color: 'from-green-500 to-teal-500'
-    },
-    {
-      name: 'Ka\'ili Crabbe',
-      role: 'Head of Communications',
-      image: '📢',
-      bio: 'Ka\'ili started her career providing clinical services focusing on community mental health and women with eating disorders before transitioning to the vocational rehabilitation field. She currently works as a Vocational Rehabilitation Counseling Supervisor in the Bay Area. Hailing from Hawai\'i, Ka\'ili has always been drawn to the natural beauty of the outdoors, fostering a deep passion for nature, sports, and community. This fuels her commitment in providing youth with safe and accessible play spaces. During her downtime, she enjoys spending time with her husband and 1-year old son – continuing to explore all the Bay Area has to offer.',
-      color: 'from-pink-500 to-rose-500'
-    },
-    {
-      name: 'Neel Chatterjee',
-      role: 'Head of Marketing',
-      image: '📱',
-      bio: 'Neel Chatterjee is a high school student at Aragon High School where he plays on the varsity basketball team, and is president of the Sports Performance club. He works at Legarza in his free time as a coach for little kids. He is also part of a research team looking at the effect of COVID-19 on dietary habits.',
-      color: 'from-cyan-500 to-blue-500'
     }
   ];
 
