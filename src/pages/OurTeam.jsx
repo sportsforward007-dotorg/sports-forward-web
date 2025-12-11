@@ -4,6 +4,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const TeamPage = () => {
+  useEffect(() => {
+    document.title = 'Our Team - Sports Forward';
+  }, []);
   const [hoveredMember, setHoveredMember] = useState(null);
 
   const team = [

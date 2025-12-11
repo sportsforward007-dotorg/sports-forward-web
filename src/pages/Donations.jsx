@@ -4,6 +4,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const DonationsPage = () => {
+  useEffect(() => {
+    document.title = 'Donations - Sports Forward';
+  }, []);
   const [selectedAmount, setSelectedAmount] = useState(null);
 
   const impactLevels = [
@@ -94,57 +97,80 @@ const DonationsPage = () => {
 
       {/* Donation CTA with PayPal */}
       <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-teal-600/30 to-orange-600/30 backdrop-blur-lg border-2 border-white/20 rounded-3xl p-12 text-center relative overflow-hidden">
-            {/* Animated Background */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 left-0 w-full h-full" style={{
-                backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
-                backgroundSize: '30px 30px'
-              }} />
-            </div>
-
-            <div className="relative z-10">
-              <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-teal-400 to-orange-400 rounded-full flex items-center justify-center">
-                <Heart className="w-10 h-10 text-white" />
-              </div>
-
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Make an Impact?
-              </h2>
-              <p className="text-xl text-gray-200 mb-8">
-                Join us in empowering these young athletes with the tools they need to thrive
-              </p>
-
-              {/* PayPal Button */}
-              <div className="mb-8">
-                <a
-                  href="https://www.paypal.com/donate/?hosted_button_id=9HZ4T95VULYEE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full text-white font-bold text-xl shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105"
-                >
-                  <DollarSign className="w-6 h-6" />
-                  DONATE WITH PAYPAL
-                </a>
-              </div>
-
-              {/* PayPal Logo Placeholder */}
-              <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-8 py-4">
-                <div className="text-center">
-                  <div className="text-4xl mb-2">💳</div>
-                  <p className="text-gray-300 text-sm font-semibold">Secure Payment via PayPal</p>
-                </div>
-              </div>
-
-              <div className="mt-8 flex items-center justify-center gap-2 text-gray-300 text-sm">
-                <Shield className="w-4 h-4 text-teal-400" />
-                <span>100% Secure & Tax-Deductible</span>
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          
+          {/* Image Side */}
+          <div className="order-2 md:order-1">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-orange-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+              <div className="relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden">
+                <img 
+                  src="/sports-forward-web/images/homepage/venemo.png"
+                  alt="Children playing sports"
+                  className="w-full h-full object-cover rounded-3xl group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
             </div>
           </div>
+
+          {/* Donation Form Side */}
+          <div className="order-1 md:order-2">
+            <div className="bg-gradient-to-br from-teal-600/30 to-orange-600/30 backdrop-blur-lg border-2 border-white/20 rounded-3xl p-12 relative overflow-hidden">
+              {/* Animated Background */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-0 left-0 w-full h-full" style={{
+                  backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
+                  backgroundSize: '30px 30px'
+                }} />
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-teal-400 to-orange-400 rounded-full flex items-center justify-center">
+                  <Heart className="w-10 h-10 text-white" />
+                </div>
+
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                  Ready to Make an Impact?
+                </h2>
+                <p className="text-xl text-gray-200 mb-8 text-center">
+                  Join us in empowering these young athletes with the tools they need to thrive
+                </p>
+
+                {/* PayPal Button */}
+                <div className="mb-8 text-center">
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=9HZ4T95VULYEE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full text-white font-bold text-xl shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105"
+                  >
+                    <DollarSign className="w-6 h-6" />
+                    DONATE WITH PAYPAL
+                  </a>
+                </div>
+
+                {/* PayPal Logo Placeholder */}
+                <div className="flex justify-center">
+                  <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-8 py-4">
+                    <div className="text-center">
+                      <div className="text-4xl mb-2">💳</div>
+                      <p className="text-gray-300 text-sm font-semibold">Secure Payment via PayPal</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex items-center justify-center gap-2 text-gray-300 text-sm">
+                  <Shield className="w-4 h-4 text-teal-400" />
+                  <span>100% Secure & Tax-Deductible</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Why Donate Section */}
       <section className="py-20 px-6 bg-gradient-to-r from-teal-600/10 to-orange-600/10">

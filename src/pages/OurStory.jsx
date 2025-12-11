@@ -8,6 +8,10 @@ const StoryPage = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
+    document.title = 'Our Story - Sports Forward';
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
       const scrolled = window.scrollY;

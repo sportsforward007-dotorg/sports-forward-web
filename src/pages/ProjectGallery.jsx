@@ -5,6 +5,11 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const ProjectGalleryPage = ({ projectData }) => {
+
+  useEffect(() => {
+    document.title = 'Project Gallery - Sports Forward';
+  }, []);
+
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 

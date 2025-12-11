@@ -5,6 +5,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const AboutPage = () => {
+  useEffect(() => {
+    document.title = 'About US - Sports Forward';
+  }, []);
   const features = [
     {
       icon: <Target className="w-8 h-8" />,

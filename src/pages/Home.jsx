@@ -5,6 +5,11 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const HomePage = () => {
+
+  useEffect(() => {
+    document.title = 'Home - Sports Forward';
+  }, []);
+
   const [scrollY, setScrollY] = useState(0);
   const [stats, setStats] = useState({ projects: 0, children: 0, equipment: 0, states: 0 });
 

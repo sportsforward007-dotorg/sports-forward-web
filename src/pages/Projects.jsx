@@ -5,6 +5,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const ProjectsPage = () => {
+  useEffect(() => {
+    document.title = 'Projects - Sports Forward';
+  }, []);
   const [selectedProject, setSelectedProject] = useState(null);
   const [filter, setFilter] = useState('all');
 
