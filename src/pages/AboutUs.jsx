@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Target, Users, Lightbulb, TrendingUp, Shield, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -201,13 +202,13 @@ const AboutPage = () => {
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Your support can make a real impact. Help us provide sports equipment and opportunities to more children in need.
               </p>
-              <a
-                href="/donations"
+              <Link
+                to="/donations"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-teal-500/50 transition-all duration-300"
               >
                 Donate Now
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
 
             <div className="bg-gradient-to-br from-orange-600/20 to-teal-600/20 backdrop-blur-lg border border-white/10 rounded-3xl p-10 hover:scale-105 transition-all duration-300">

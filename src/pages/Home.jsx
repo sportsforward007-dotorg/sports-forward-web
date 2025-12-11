@@ -177,13 +177,11 @@ const HomePage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="bg-gradient-to-br from-teal-500/20 to-orange-500/20 rounded-3xl p-8 backdrop-blur-lg border border-white/10">
-                <div className="aspect-video bg-gray-800/50 rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">📸</div>
-                    <p className="text-gray-400">Image Placeholder</p>
-                    <p className="text-sm text-gray-500">School children in Chandala</p>
-                  </div>
-                </div>
+                <img 
+                  src="/images/homepage/mission-section.png"
+                  alt="School children in Chandala near Ghadchiroli"
+                  className="w-full h-auto rounded-2xl object-cover"
+                />
               </div>
             </div>
             

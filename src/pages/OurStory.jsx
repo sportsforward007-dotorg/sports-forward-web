@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, MapPin, Lightbulb, TrendingUp, ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -242,20 +243,20 @@ const StoryPage = () => {
               Help us write the next chapter - together we can empower more children through the power of sports
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/donations"
+              <Link
+                to="/donations"
                 className="px-8 py-4 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full text-white font-semibold text-lg shadow-xl hover:shadow-teal-500/50 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2"
               >
                 <Heart className="w-5 h-5" />
                 Donate Now
-              </a>
-              <a
-                href="/projects"
+              </Link>
+              <Link
+                to="/projects"
                 className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white font-semibold text-lg hover:bg-white/20 transition-all duration-300 inline-flex items-center justify-center gap-2"
               >
                 View Our Projects
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
