@@ -67,17 +67,17 @@ const ProjectGalleryPage = ({ projectData }) => {
               <div className="text-center">
                 <div className="text-4xl mb-2">📍</div>
                 <h3 className="text-white font-bold mb-1">Location</h3>
-                <p className="text-gray-300">Project Location</p>
+                <p className="text-gray-300">{projectData?.location || 'Project Location'}</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-2">📅</div>
                 <h3 className="text-white font-bold mb-1">Completed</h3>
-                <p className="text-gray-300">Project Date</p>
+                <p className="text-gray-300">{projectData?.year || 'Project Date'}</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-2">👥</div>
                 <h3 className="text-white font-bold mb-1">Impact</h3>
-                <p className="text-gray-300">Children Benefited</p>
+                <p className="text-gray-300">{projectData?.impact || 'Children Benefited'}</p>
               </div>
             </div>
           </div>
@@ -186,9 +186,15 @@ const ProjectGalleryPage = ({ projectData }) => {
               About This Project
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
-              <p className="text-gray-300">{projectData?.location || 'Project Location'}</p>
-              <p className="text-gray-300">{projectData?.year || 'Project Date'}</p>
-              <p className="text-gray-300">{projectData?.impact || 'Children Benefited'}</p>
+              <p>
+                This project represents our commitment to bringing sports opportunities to underserved communities. Through the dedication of our team and the support of generous donors, we were able to transform this area into a vibrant sports facility.
+              </p>
+              <p>
+                The journey from concept to completion involved careful planning, community engagement, and hands-on construction work. Every step of the way, we kept the needs of the children at the forefront of our decisions.
+              </p>
+              <p>
+                Today, this facility serves as a beacon of hope and opportunity, providing a safe space for children to play, learn, and grow through sports.
+              </p>
             </div>
           </div>
         </div>
