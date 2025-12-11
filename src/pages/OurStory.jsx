@@ -115,12 +115,12 @@ const StoryPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-500">
-              <div className="h-64 bg-gradient-to-br from-orange-500/30 to-red-500/30 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-7xl mb-4 group-hover:scale-110 transition-transform">📸</div>
-                  <p className="text-gray-300 font-semibold">Image Placeholder</p>
-                  <p className="text-sm text-gray-500">Chandala Village - Before</p>
-                </div>
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src="/sports-forward-web/images/homepage/mission-section.png"
+                  alt="Chandala Village - Before"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-white mb-3">The Challenge</h3>
@@ -131,12 +131,12 @@ const StoryPage = () => {
             </div>
 
             <div className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-500">
-              <div className="h-64 bg-gradient-to-br from-teal-500/30 to-green-500/30 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-7xl mb-4 group-hover:scale-110 transition-transform">📸</div>
-                  <p className="text-gray-300 font-semibold">Image Placeholder</p>
-                  <p className="text-sm text-gray-500">Sports Facility Completed</p>
-                </div>
+              <div className="h-64 overflow-hidden">
+                <img 
+                  src="/sports-forward-web/images/projects/chandala/chandala-main.jpg"
+                  alt="Sports Facility Completed"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-white mb-3">The Solution</h3>
