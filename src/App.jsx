@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -18,7 +18,7 @@ import OdishaOpportunities from './pages/OdishaOpportunities';
 
 function App() {
   return (
-    <Router basename="/sports-forward-web">
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
