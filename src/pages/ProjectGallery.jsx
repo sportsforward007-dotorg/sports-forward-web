@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight, Download, Share2, ArrowLeft } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Download, Share2, ArrowLeft, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -10,27 +10,30 @@ const ProjectGalleryPage = ({ projectData }) => {
     document.title = 'Project Gallery - Sports Forward';
   }, []);
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedMedia, setSelectedMedia] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // This would be populated with actual project images
-  const galleryImages = projectData?.images || [];
+  // Combine images and videos into one gallery array
+  const galleryMedia = [
+    ...(projectData?.images || []).map(item => ({ ...item, type: 'image' })),
+    ...(projectData?.videos || []).map(item => ({ ...item, type: 'video' }))
+  ];
 
   const openLightbox = (index) => {
     setCurrentIndex(index);
-    setSelectedImage(galleryImages[index]);
+    setSelectedMedia(galleryMedia[index]);
   };
 
   const closeLightbox = () => {
-    setSelectedImage(null);
+    setSelectedMedia(null);
   };
 
-  const navigateImage = (direction) => {
+  const navigateMedia = (direction) => {
     const newIndex = direction === 'next'
-      ? (currentIndex + 1) % galleryImages.length
-      : (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      ? (currentIndex + 1) % galleryMedia.length
+      : (currentIndex - 1 + galleryMedia.length) % galleryMedia.length;
     setCurrentIndex(newIndex);
-    setSelectedImage(galleryImages[newIndex]);
+    setSelectedMedia(galleryMedia[newIndex]);
   };
 
   return (
@@ -93,28 +96,42 @@ const ProjectGalleryPage = ({ projectData }) => {
       <section className="py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {galleryImages.map((image, idx) => (
+            {galleryMedia.map((media, idx) => (
               <div
-                key={image.id}
+                key={idx}
                 onClick={() => openLightbox(idx)}
                 className="group relative bg-gradient-to-br from-teal-600/20 to-orange-600/20 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-teal-500/20"
               >
-                {/* Image Placeholder */}
-                <div className="aspect-square bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                  <div className="aspect-square overflow-hidden">
+                {/* Media Content */}
+                <div className="aspect-square bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative">
+                  {media.type === 'image' ? (
                     <img 
-                      src={image.url} 
-                      alt={image.caption || `Gallery image ${idx + 1}`}
+                      src={media.url} 
+                      alt={media.caption || `Gallery image ${idx + 1}`}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
-                  </div>
+                  ) : (
+                    <>
+                      <video 
+                        src={media.url}
+                        className="w-full h-full object-cover"
+                        muted
+                      />
+                      {/* Play Icon Overlay for Videos */}
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                        <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <Play className="w-8 h-8 text-slate-900 ml-1" fill="currentColor" />
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
 
                 {/* Overlay on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <div>
-                    <h3 className="text-white font-bold mb-1">{image.title}</h3>
-                    <p className="text-gray-300 text-sm">{image.description}</p>
+                    <h3 className="text-white font-bold mb-1">{media.title}</h3>
+                    <p className="text-gray-300 text-sm">{media.description}</p>
                   </div>
                 </div>
               </div>
@@ -124,47 +141,61 @@ const ProjectGalleryPage = ({ projectData }) => {
       </section>
 
       {/* Lightbox Modal */}
-      {selectedImage && (
+      {selectedMedia && (
         <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg flex items-center justify-center p-4">
           {/* Close Button */}
           <button
             onClick={closeLightbox}
-            className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+            className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
           >
             <X className="w-6 h-6 text-white" />
           </button>
 
           {/* Navigation Buttons */}
           <button
-            onClick={() => navigateImage('prev')}
-            className="absolute left-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+            onClick={() => navigateMedia('prev')}
+            className="absolute left-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
 
           <button
-            onClick={() => navigateImage('next')}
-            className="absolute right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+            onClick={() => navigateMedia('next')}
+            className="absolute right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
           >
             <ChevronRight className="w-6 h-6 text-white" />
           </button>
 
-          {/* Image Container */}
+          {/* Media Container */}
           <div className="max-w-6xl max-h-[90vh] w-full">
-            {/* Large Image Placeholder */}
+            {/* Large Media Display */}
             <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden">
-              <img 
-                src={selectedImage.url}
-                alt={selectedImage.caption || 'Gallery image'}
-                className="w-full h-auto max-h-[70vh] object-contain"
-              />
+              {selectedMedia.type === 'image' ? (
+                <img 
+                  src={selectedMedia.url}
+                  alt={selectedMedia.caption || 'Gallery image'}
+                  className="w-full h-auto max-h-[70vh] object-contain"
+                />
+              ) : (
+                <video 
+                  src={selectedMedia.url}
+                  controls
+                  autoPlay
+                  className="w-full h-auto max-h-[70vh] object-contain"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              )}
             </div>
 
-            {/* Image Info */}
+            {/* Media Info */}
             <div className="mt-6 text-center">
-              <h2 className="text-2xl font-bold text-white mb-2">{selectedImage.caption}</h2>
+              <h2 className="text-2xl font-bold text-white mb-2">{selectedMedia.caption}</h2>
+              <p className="text-gray-400 text-sm">
+                {selectedMedia.type === 'video' ? '🎥 Video' : '📷 Photo'}
+              </p>
               <p className="text-gray-500 text-sm mt-2">
-                Image {currentIndex + 1} of {galleryImages.length}
+                {selectedMedia.type === 'video' ? 'Video' : 'Image'} {currentIndex + 1} of {galleryMedia.length}
               </p>
             </div>
 

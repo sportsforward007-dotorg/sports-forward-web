@@ -76,7 +76,17 @@ const HoopsForGrowth = () => {
         url: "/sports-forward-web/images/projects/hoops/gallery/hoops-8.png",
         caption: "First basketball tournament at the school"
       }
-    ]
+    ],
+  videos: [
+    {
+      url: "/sports-forward-web/videos/projects/hoops/video_01.mp4",
+      caption: "Construction Progress",
+    },
+    {
+      url: "/sports-forward-web/videos/projects/hoops/video_02.mp4",
+      caption: "Community Impact",
+    }
+  ]
   };
 
   return <ProjectGallery projectData={projectData} />;
