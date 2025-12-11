@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Send, CheckCircle, AlertCircle, FileText, User, Mail, MessageSquare } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const SubmitProjectPage = () => {
+  useEffect(() => {
+      document.title = 'Submit Project - Sports Forward';
+    }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',

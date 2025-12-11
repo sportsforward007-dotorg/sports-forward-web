@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Heart, Shield, TrendingUp, Users, Award, Check, Sparkles, DollarSign } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
