@@ -12,6 +12,9 @@ import ChandalaProject from './pages/ChandalaProject';
 import HoopsForGrowth from './pages/HoopsForGrowth';
 import CheckmateForChange from './pages/CheckmateForChange';
 import FieldsOfOpportunity from './pages/FieldsOfOpportunity';
+import ArcheryForAll from './pages/ArcheryForAll';
+import OdishaOpportunities from './pages/OdishaOpportunities';
+
 
 function App() {
   return (
@@ -29,6 +32,8 @@ function App() {
         <Route path="/hoops" element={<HoopsForGrowth />} />
         <Route path="/checkmate" element={<CheckmateForChange />} />
         <Route path="/field" element={<FieldsOfOpportunity />} />
+        <Route path='/archery' element={<ArcheryForAll />} />
+        <Route path='/odisha' element={<OdishaOpportunities />} />
       </Routes>
     </Router>
   );

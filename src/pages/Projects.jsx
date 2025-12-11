@@ -55,6 +55,7 @@ const ProjectsPage = () => {
       description: 'Introduced archery to kids in rural areas. Donated archery sets with essential safety equipment and target boards.',
       impact: 'First archery program in rural Punjab',
       category: 'Equipment',
+      galleryLink: '/archery',
       image: '/sports-forward-web/images/projects/archery/archery-1.png'
     },
     {
@@ -78,6 +79,7 @@ const ProjectsPage = () => {
       description: 'Delivered variety of nets (volleyball, badminton), rackets, balls, bats, and shuttle corks to high school with no prior sports equipment access.',
       impact: 'Comprehensive sports equipment donation',
       category: 'Equipment',
+      galleryLink: '/odisha',
       image: '/sports-forward-web/images/projects/odisha/odisha-1.png'
     }
   ];
