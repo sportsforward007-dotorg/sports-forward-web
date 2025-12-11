@@ -20,7 +20,7 @@ const ProjectsPage = () => {
       category: 'Infrastructure',
       galleryLink: '/chandala',
       fundraiserLink: 'https://www.gofundme.com/f/sports-recreation-area-in-chandala-india',
-      image: '🏐'
+      image: '/sports-forward-web/images/projects/chandala/chandala-main.jpg'
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ const ProjectsPage = () => {
       impact: 'First sports initiative in school history',
       category: 'Equipment',
       galleryLink: '/hoops',
-      image: '🏀'
+      image: '/sports-forward-web/images/projects/hoops/hoops-preview-1.png'
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ const ProjectsPage = () => {
       impact: 'Year-long chess program with tournaments',
       category: 'Equipment',
       galleryLink: '/checkmate',
-      image: '♟️'
+      image: '/sports-forward-web/images/projects/chess/gallery/chess-1.png'
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ const ProjectsPage = () => {
       description: 'Introduced archery to kids in rural areas. Donated archery sets with essential safety equipment and target boards.',
       impact: 'First archery program in rural Punjab',
       category: 'Equipment',
-      image: '🎯'
+      image: '/sports-forward-web/images/projects/archery/archery-1.png'
     },
     {
       id: 5,
@@ -67,7 +67,7 @@ const ProjectsPage = () => {
       impact: 'First sports equipment for the school',
       category: 'Equipment',
       galleryLink: '/field',
-      image: '⚽'
+      image: '/sports-forward-web/images/projects/fields/gallery/fields-1.png'
     },
     {
       id: 6,
@@ -78,7 +78,7 @@ const ProjectsPage = () => {
       description: 'Delivered variety of nets (volleyball, badminton), rackets, balls, bats, and shuttle corks to high school with no prior sports equipment access.',
       impact: 'Comprehensive sports equipment donation',
       category: 'Equipment',
-      image: '🏸'
+      image: '/sports-forward-web/images/projects/odisha/odisha-1.png'
     }
   ];
 
@@ -157,10 +157,12 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Image Placeholder */}
-                <div className="relative h-64 bg-gradient-to-br from-teal-600/30 to-orange-600/30 flex items-center justify-center">
-                  <div className="text-8xl group-hover:scale-110 transition-transform duration-500">
-                    {project.image}
-                  </div>
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
                 </div>
 

@@ -33,28 +33,16 @@ const FieldsOfOpportunity = () => {
     ],
     images: [
       {
-        url: "https://static.wixstatic.com/media/c9c221_4613ca45f40341888c49427181896f3f~mv2.png/v1/fill/w_800,h_600,al_c,q_85/c9c221_4613ca45f40341888c49427181896f3f~mv2.png",
-        caption: "Soccer goalpost installation"
+        url: "/sports-forward-web/images/projects/fields/gallery/fields-1.png",
+        caption: "Soccer equipment donation in Uttar Pradesh"
       },
       {
-        url: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800",
-        caption: "Students playing soccer for the first time"
+        url: "/sports-forward-web/images/projects/fields/gallery/fields-2.png",
+        caption: "Complete sports equipment set for the school"
       },
       {
-        url: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=800",
-        caption: "Badminton practice session"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800",
-        caption: "Community sports day celebration"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800",
-        caption: "Students with new sports equipment"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1486286701208-1d58e9338013?w=800",
-        caption: "School playground transformed"
+        url: "/sports-forward-web/images/projects/archery/archery-3.png",
+        caption: "Sports activities at the school"
       }
     ]
   };

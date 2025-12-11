@@ -33,27 +33,47 @@ const HoopsForGrowth = () => {
     ],
     images: [
       {
-        url: "https://static.wixstatic.com/media/c9c221_d636a19790fb4bf8adfb2795c1fc4f67~mv2.png/v1/fill/w_800,h_600,al_c,q_85/c9c221_d636a19790fb4bf8adfb2795c1fc4f67~mv2.png",
+        url: "/sports-forward-web/images/projects/hoops/hoops-preview-1.png",
         caption: "Students with new basketball equipment"
       },
       {
-        url: "https://static.wixstatic.com/media/c9c221_f9ac73e644ad4f1e9a976d44ae822d4d~mv2.png/v1/fill/w_800,h_600,al_c,q_85/c9c221_f9ac73e644ad4f1e9a976d44ae822d4d~mv2.png",
+        url: "/sports-forward-web/images/projects/hoops/hoops-preview-2.png",
         caption: "Basketball court at Modern Public School"
       },
       {
-        url: "https://static.wixstatic.com/media/c9c221_f9e61142c6d6417ca967a7febb5595aa~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/Screen%20Shot%202024-10-21%20at%209_24_edited_jp.jpg",
+        url: "/sports-forward-web/images/projects/hoops/hoops-preview-3.jpg",
         caption: "Children playing basketball for the first time"
       },
       {
-        url: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
-        caption: "Students practicing dribbling skills"
+        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-1.png",
+        caption: "Basketball training session"
       },
       {
-        url: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=800",
+        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-2.png",
+        caption: "Students practicing their skills"
+      },
+      {
+        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-3.png",
         caption: "Team building through basketball"
       },
       {
-        url: "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?w=800",
+        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-4.png",
+        caption: "Community basketball event"
+      },
+      {
+        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-5.png",
+        caption: "Young athletes developing their game"
+      },
+      {
+        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-6.png",
+        caption: "Basketball equipment in use"
+      },
+      {
+        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-7.png",
+        caption: "Students enjoying organized sports"
+      },
+      {
+        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-8.png",
         caption: "First basketball tournament at the school"
       }
     ]

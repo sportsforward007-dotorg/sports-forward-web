@@ -71,8 +71,12 @@ const TeamPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60" />
                   
                   {/* Profile Image Placeholder */}
-                  <div className="relative z-10 w-32 h-32 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border-4 border-white/30 shadow-2xl group-hover:scale-110 transition-transform duration-500">
-                    <span className="text-6xl">{member.image}</span>
+                  <div className="relative z-10 w-32 h-32 bg-white/10 backdrop-blur-md rounded-full overflow-hidden border-4 border-white/30 shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
                   {/* Floating Elements */}

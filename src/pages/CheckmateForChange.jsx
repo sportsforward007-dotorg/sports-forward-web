@@ -32,31 +32,15 @@ const CheckmateForChange = () => {
       }
     ],
     images: [
-      {
-        url: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800",
-        caption: "Students learning chess fundamentals"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=800",
-        caption: "Chess tournament at Channulal Navin Vidya Bhavan"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1561133143-82a8c52d6c3c?w=800",
-        caption: "Students engaged in a competitive match"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1594996082668-c7919c7dd600?w=800",
-        caption: "Young chess players concentrating on strategy"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1528819622765-d6bcf132f793?w=800",
-        caption: "Group chess lesson in progress"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1611195974226-ef4a59e77e6b?w=800",
-        caption: "Chess sets donated to the school"
-      }
-    ]
+  {
+    url: "/sports-forward-web/images/projects/chess/gallery/chess-1.png",
+    caption: "Chess sets and students at Channulal Navin Vidya Bhavan"
+  },
+  {
+    url: "/sports-forward-web/images/projects/chess/gallery/chess-2.png",
+    caption: "Students engaged in chess tournament"
+  }
+]
   };
 
   return <ProjectGallery projectData={projectData} />;
