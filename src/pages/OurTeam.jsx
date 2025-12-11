@@ -13,21 +13,21 @@ const TeamPage = () => {
     {
       name: 'Paarth Sharma',
       role: 'President',
-      image: '/sports-forward-web/images/team/paarth_sharma.jpg',
+      image: '/images/team/paarth_sharma.jpg',
       bio: 'Paarth Sharma is a Cupertino High School student with a passion for sports, fitness, and learning. An avid athlete, he actively participates in track and field, cricket, and enjoys spending time at the gym. Beyond athletics, Paarth has a deep interest in design, psychology, and business. Paarth is committed to making sports accessible for underprivileged children, especially in underdeveloped and developing countries. Driven by this mission, he regularly travels to India to lead projects that provide sports equipment and promote inclusive development in schools. He stays connected with students, offering guidance and mentorship on various issues, fostering opportunities for growth and empowerment through sports.',
       color: 'from-teal-500 to-blue-500'
     },
     {
       name: 'Raj Keswani',
       role: 'Vice President',
-      image: '/sports-forward-web/images/team/raj-keswani.png',
+      image: '/images/team/raj-keswani.png',
       bio: 'Raj Keswani is attending Vanderbilt University. Growing up, Raj has always been passionate about sports, playing baseball, basketball, and football. Additionally, Raj is dedicated to giving back to the community and ensuring that the underprivileged are always represented. Raj has a deep interest in the intersection between sports, business, and law and hopes to study it in the future.',
       color: 'from-teal-500 to-blue-500'
     },
     {
       name: 'Kashish Sharma',
       role: 'Secretary',
-      image: '/sports-forward-web/images/team/kashish-sharma.jpeg',
+      image: '/images/team/kashish-sharma.jpeg',
       bio: 'Kashish Sharma is Senior Manager at Applied Materials where he leads a group to develop innovative processes for chip manufacturers. Before Applied Materials, Kashish worked at Lam Research. He holds Ph.D. in applied physics from the Eindhoven University of Technology.',
       color: 'from-green-500 to-teal-500'
     }

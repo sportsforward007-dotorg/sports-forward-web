@@ -33,15 +33,15 @@ const ArcheryForAll = () => {
     ],
     images: [
       {
-        url: "/sports-forward-web/images/projects/archery/archery-1.png",
+        url: "/images/projects/archery/archery-1.png",
         caption: "Archery equipment donation"
       },
       {
-        url: "/sports-forward-web/images/projects/archery/archery-2.png",
+        url: "/images/projects/archery/archery-2.png",
         caption: "Student with archery equipment"
       },
       {
-        url: "/sports-forward-web/images/projects/archery/archery-3.png",
+        url: "/images/projects/archery/archery-3.png",
         caption: "Archery practice session"
       }
     ]

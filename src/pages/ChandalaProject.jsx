@@ -39,15 +39,15 @@ const ChandalaProject = () => {
     ],
     images: [
   {
-    url: "/sports-forward-web/images/projects/chandala/chandala-main.jpg",
+    url: "/images/projects/chandala/chandala-main.jpg",
     caption: "The completed sports recreation area in Chandala"
   },
   {
-    url: "/sports-forward-web/images/homepage/mission-section.png",
+    url: "/images/homepage/mission-section.png",
     caption: "School children in Chandala near Ghadchiroli"
   },
   {
-    url: "/sports-forward-web/images/homepage/hero-banner.png",
+    url: "/images/homepage/hero-banner.png",
     caption: "Children watching the building of new sports field"
   }
 ]

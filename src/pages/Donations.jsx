@@ -115,7 +115,7 @@ const DonationsPage = () => {
               <div className="order-2 md:order-1 p-12">
                 <div className="relative group">
                   <img 
-                    src="/sports-forward-web/images/homepage/venemo.png"
+                    src="/images/homepage/venemo.png"
                     alt="Children playing sports"
                     className="w-full h-auto object-contain rounded-2xl group-hover:scale-105 transition-transform duration-500"
                   />

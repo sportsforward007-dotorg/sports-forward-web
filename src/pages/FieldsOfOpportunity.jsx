@@ -33,41 +33,41 @@ const FieldsOfOpportunity = () => {
     ],
     images: [
       {
-        url: "/sports-forward-web/images/projects/fields/image_17.png",
+        url: "/images/projects/fields/image_17.png",
         caption: "Soccer equipment donation in Uttar Pradesh"
       },
       {
-        url: "/sports-forward-web/images/projects/fields/image_18.jpg",
+        url: "/images/projects/fields/image_18.jpg",
         caption: "Complete sports equipment set for the school"
       },
       {
-        url: "/sports-forward-web/images/projects/fields/image_01.jpg",
+        url: "/images/projects/fields/image_01.jpg",
         caption: "Sports activities at the school"
       },
       {
-        url: "/sports-forward-web/images/projects/fields/image_02.jpg",
+        url: "/images/projects/fields/image_02.jpg",
         caption: "Soccer equipment donation in Uttar Pradesh"
       },
       {
-        url: "/sports-forward-web/images/projects/fields/image_10.jpg",
+        url: "/images/projects/fields/image_10.jpg",
         caption: "Complete sports equipment set for the school"
       },
       {
-        url: "/sports-forward-web/images/projects/fields/image_13.jpg",
+        url: "/images/projects/fields/image_13.jpg",
         caption: "Sports activities at the school"
       }
     ],
   videos: [
     {
-      url: "/sports-forward-web/videos/projects/fields/video_01.mp4",
+      url: "/videos/projects/fields/video_01.mp4",
       caption: "Construction Progress",
     },
     {
-      url: "/sports-forward-web/videos/projects/fields/video_02.mp4",
+      url: "/videos/projects/fields/video_02.mp4",
       caption: "Community Impact",
     },
     {
-      url: "/sports-forward-web/videos/projects/fields/video_03.mp4",
+      url: "/videos/projects/fields/video_03.mp4",
       caption: "Construction Progress",
     }
   ]

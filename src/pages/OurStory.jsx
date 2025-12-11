@@ -121,7 +121,7 @@ const StoryPage = () => {
             <div className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-500">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/sports-forward-web/images/homepage/mission-section.png"
+                  src="/images/homepage/mission-section.png"
                   alt="Chandala Village - Before"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -137,7 +137,7 @@ const StoryPage = () => {
             <div className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-500">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="/sports-forward-web/images/projects/chandala/chandala-main.jpg"
+                  src="/images/projects/chandala/chandala-main.jpg"
                   alt="Sports Facility Completed"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />

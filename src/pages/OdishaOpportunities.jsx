@@ -33,11 +33,11 @@ const OdishaOpportunities = () => {
     ],
     images: [
       {
-        url: "/sports-forward-web/images/projects/odisha/odisha-1.png",
+        url: "/images/projects/odisha/odisha-1.png",
         caption: "Sports equipment delivery in Rourkela"
       },
       {
-        url: "/sports-forward-web/images/projects/odisha/odisha-2.png",
+        url: "/images/projects/odisha/odisha-2.png",
         caption: "Students receiving sports equipment"
       }
     ]

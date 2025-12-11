@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       category: 'Infrastructure',
       galleryLink: '/chandala',
       fundraiserLink: 'https://www.gofundme.com/f/sports-recreation-area-in-chandala-india',
-      image: '/sports-forward-web/images/projects/chandala/chandala-main.jpg'
+      image: '/images/projects/chandala/chandala-main.jpg'
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
       impact: 'First sports initiative in school history',
       category: 'Equipment',
       galleryLink: '/hoops',
-      image: '/sports-forward-web/images/projects/hoops/hoops-preview-1.png'
+      image: '/images/projects/hoops/hoops-preview-1.png'
     },
     {
       id: 3,
@@ -47,7 +47,7 @@ const ProjectsPage = () => {
       impact: 'Year-long chess program with tournaments',
       category: 'Equipment',
       galleryLink: '/checkmate',
-      image: '/sports-forward-web/images/projects/chess/gallery/chess-1.png'
+      image: '/images/projects/chess/gallery/chess-1.png'
     },
     {
       id: 4,
@@ -59,7 +59,7 @@ const ProjectsPage = () => {
       impact: 'First archery program in rural Punjab',
       category: 'Equipment',
       galleryLink: '/archery',
-      image: '/sports-forward-web/images/projects/archery/archery-1.png'
+      image: '/images/projects/archery/archery-1.png'
     },
     {
       id: 5,
@@ -71,7 +71,7 @@ const ProjectsPage = () => {
       impact: 'First sports equipment for the school',
       category: 'Equipment',
       galleryLink: '/field',
-      image: '/sports-forward-web/images/projects/fields/gallery/fields-1.png'
+      image: '/images/projects/fields/gallery/fields-1.png'
     },
     {
       id: 6,
@@ -83,7 +83,7 @@ const ProjectsPage = () => {
       impact: 'Comprehensive sports equipment donation',
       category: 'Equipment',
       galleryLink: '/odisha',
-      image: '/sports-forward-web/images/projects/odisha/odisha-1.png'
+      image: '/images/projects/odisha/odisha-1.png'
     }
   ];
 

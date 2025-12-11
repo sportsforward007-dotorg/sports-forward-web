@@ -33,57 +33,57 @@ const HoopsForGrowth = () => {
     ],
     images: [
       {
-        url: "/sports-forward-web/images/projects/hoops/hoops-preview-1.png",
+        url: "/images/projects/hoops/hoops-preview-1.png",
         caption: "Students with new basketball equipment"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/hoops-preview-2.png",
+        url: "/images/projects/hoops/hoops-preview-2.png",
         caption: "Basketball court at Modern Public School"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/hoops-preview-3.jpg",
+        url: "/images/projects/hoops/hoops-preview-3.jpg",
         caption: "Children playing basketball for the first time"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-1.png",
+        url: "/images/projects/hoops/gallery/hoops-1.png",
         caption: "Basketball training session"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-2.png",
+        url: "/images/projects/hoops/gallery/hoops-2.png",
         caption: "Students practicing their skills"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-3.png",
+        url: "/images/projects/hoops/gallery/hoops-3.png",
         caption: "Team building through basketball"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-4.png",
+        url: "/images/projects/hoops/gallery/hoops-4.png",
         caption: "Community basketball event"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-5.png",
+        url: "/images/projects/hoops/gallery/hoops-5.png",
         caption: "Young athletes developing their game"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-6.png",
+        url: "/images/projects/hoops/gallery/hoops-6.png",
         caption: "Basketball equipment in use"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-7.png",
+        url: "/images/projects/hoops/gallery/hoops-7.png",
         caption: "Students enjoying organized sports"
       },
       {
-        url: "/sports-forward-web/images/projects/hoops/gallery/hoops-8.png",
+        url: "/images/projects/hoops/gallery/hoops-8.png",
         caption: "First basketball tournament at the school"
       }
     ],
   videos: [
     {
-      url: "/sports-forward-web/videos/projects/hoops/video_01.mp4",
+      url: "/videos/projects/hoops/video_01.mp4",
       caption: "Construction Progress",
     },
     {
-      url: "/sports-forward-web/videos/projects/hoops/video_02.mp4",
+      url: "/videos/projects/hoops/video_02.mp4",
       caption: "Community Impact",
     }
   ]

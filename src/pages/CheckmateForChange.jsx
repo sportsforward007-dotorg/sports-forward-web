@@ -33,49 +33,49 @@ const CheckmateForChange = () => {
     ],
     images: [
   {
-    url: "/sports-forward-web/images/projects/chess/image_01.jpg",
+    url: "/images/projects/chess/image_01.jpg",
     caption: "Chess sets and students at Channulal Navin Vidya Bhavan"
   },
   {
-    url: "/sports-forward-web/images/projects/chess/image_02.jpg",
+    url: "/images/projects/chess/image_02.jpg",
     caption: "Students engaged in chess tournament"
   },
   {
-    url: "/sports-forward-web/images/projects/chess/image_03.png",
+    url: "/images/projects/chess/image_03.png",
     caption: "Chess sets and students at Channulal Navin Vidya Bhavan"
   },
   {
-    url: "/sports-forward-web/images/projects/chess/image_04.png",
+    url: "/images/projects/chess/image_04.png",
     caption: "Students engaged in chess tournament"
   },
   {
-    url: "/sports-forward-web/images/projects/chess/image_09.jpg",
+    url: "/images/projects/chess/image_09.jpg",
     caption: "Chess sets and students at Channulal Navin Vidya Bhavan"
   },
   {
-    url: "/sports-forward-web/images/projects/chess/image_10.png",
+    url: "/images/projects/chess/image_10.png",
     caption: "Students engaged in chess tournament"
   },
   {
-    url: "/sports-forward-web/images/projects/chess/image_16.jpg",
+    url: "/images/projects/chess/image_16.jpg",
     caption: "Chess sets and students at Channulal Navin Vidya Bhavan"
   }
 ],
   videos: [
     {
-      url: "/sports-forward-web/videos/projects/chess/video_01.mp4",
+      url: "/videos/projects/chess/video_01.mp4",
       caption: "Construction Progress",
     },
     {
-      url: "/sports-forward-web/videos/projects/chess/video_02.mp4",
+      url: "/videos/projects/chess/video_02.mp4",
       caption: "Community Impact",
     },
     {
-      url: "/sports-forward-web/videos/projects/chess/video_03.mp4",
+      url: "/videos/projects/chess/video_03.mp4",
       caption: "Construction Progress",
     },
     {
-      url: "/sports-forward-web/videos/projects/chess/video_04.mp4",
+      url: "/videos/projects/chess/video_04.mp4",
       caption: "Community Impact",
     }
   ]
