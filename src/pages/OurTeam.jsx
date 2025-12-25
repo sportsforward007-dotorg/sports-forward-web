@@ -106,9 +106,13 @@ const TeamPage = () => {
                     </div>
                   </div>
 
-                  <p className="text-gray-300 leading-relaxed text-sm mb-6 line-clamp-6">
-                    {member.bio}
-                  </p>
+                  <div className={`mb-6 transition-all duration-300 ${
+                    hoveredMember === idx ? 'max-h-64 overflow-y-auto' : 'max-h-32 overflow-hidden'
+                  }`}>
+                    <p className="text-gray-300 leading-relaxed text-sm pr-2">
+                      {member.bio}
+                    </p>
+                  </div>
 
                   {/* Social Links */}
                   <div className="flex gap-3">
