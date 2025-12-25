@@ -30,6 +30,13 @@ const TeamPage = () => {
       image: '/images/team/kashish-sharma.jpeg',
       bio: 'Kashish Sharma is Senior Manager at Applied Materials where he leads a group to develop innovative processes for chip manufacturers. Before Applied Materials, Kashish worked at Lam Research. He holds Ph.D. in applied physics from the Eindhoven University of Technology.',
       color: 'from-green-500 to-teal-500'
+    },
+    {
+      name: 'Manish Keswani',
+      role: 'Chief Financial Officer',
+      image: '/images/team/manish_keswani.jpg',
+      bio: 'Manish Keswani brings a strong commitment to service, mentorship, and community development to nonprofit work. He holds a PhD in Chemical Engineering and is an entrepreneur with a career focused on leadership, problem-solving, and team development. He actively supports education and youth outreach and uses sports to promote teamwork and resilience.',
+      color: 'from-green-500 to-teal-500'
     }
   ];
 
