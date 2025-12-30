@@ -19,9 +19,9 @@ const TeamPage = () => {
     },
     {
       name: 'Raj Keswani',
-      role: 'Vice President',
-      image: '/images/team/raj-keswani.png',
-      bio: 'Raj Keswani is attending Vanderbilt University. Growing up, Raj has always been passionate about sports, playing baseball, basketball, and football. Additionally, Raj is dedicated to giving back to the community and ensuring that the underprivileged are always represented. Raj has a deep interest in the intersection between sports, business, and law and hopes to study it in the future.',
+      role: 'Founder and Vice President',
+      image: '/images/team/raj-keswani_new.png',
+      bio: 'Raj Keswani is a student at Vanderbilt University with a passion for sports, having played baseball, basketball, and football. He founded Sports Forward in 2023 and previously served as President for three years before stepping into the role of Vice President to empower younger leaders. Raj is committed to community service and increasing representation for underprivileged children through sports.',
       color: 'from-teal-500 to-blue-500'
     },
     {
