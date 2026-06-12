@@ -24,13 +24,7 @@ const TeamPage = () => {
       bio: 'Raj Keswani is a student at Vanderbilt University with a passion for sports, having played baseball, basketball, and football. He founded Sports Forward in 2023 and previously served as President for three years before stepping into the role of Vice President to empower younger leaders. Raj is committed to community service and increasing representation for underprivileged children through sports.',
       color: 'from-teal-500 to-blue-500'
     },
-    {
-      name: 'Kashish Sharma',
-      role: 'Secretary',
-      image: '/images/team/kashish-sharma.jpeg',
-      bio: 'Kashish Sharma is Senior Manager at Applied Materials where he leads a group to develop innovative processes for chip manufacturers. Before Applied Materials, Kashish worked at Lam Research. He holds Ph.D. in applied physics from the Eindhoven University of Technology.',
-      color: 'from-green-500 to-teal-500'
-    },
+
     {
       name: 'Manish Keswani',
       role: 'Chief Financial Officer',
