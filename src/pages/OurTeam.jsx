@@ -24,6 +24,13 @@ const TeamPage = () => {
       bio: 'Raj Keswani is a student at Vanderbilt University with a passion for sports, having played baseball, basketball, and football. He founded Sports Forward in 2023 and previously served as President for three years before stepping into the role of Vice President to empower younger leaders. Raj is committed to community service and increasing representation for underprivileged children through sports.',
       color: 'from-teal-500 to-blue-500'
     },
+    {
+      name: 'Damodar',
+      role: 'Director of Operations',
+      image: '/images/team/damodar.jpg',
+      bio: 'Damodar brings extensive experience in operations management and community outreach to Sports Forward. With a background in nonprofit management and a passion for youth development, he oversees project execution and ensures smooth operations across all initiatives. His dedication to creating sustainable impact through sports has been instrumental in expanding our reach to underserved communities.',
+      color: 'from-orange-500 to-red-500'
+    },
 
     {
       name: 'Manish Keswani',
