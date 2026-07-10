@@ -11,7 +11,7 @@ const TeamPage = () => {
 
   const team = [
     {
-      name: 'Paarth Sharma',
+      name: 'Paarth Sharma ',
       role: 'President',
       image: '/images/team/paarth_sharma.jpg',
       bio: 'Paarth Sharma is a Cupertino High School student with a passion for sports, fitness, and learning. An avid athlete, he actively participates in track and field, cricket, and enjoys spending time at the gym. Beyond athletics, Paarth has a deep interest in design, psychology, and business. Paarth is committed to making sports accessible for underprivileged children, especially in underdeveloped and developing countries. Driven by this mission, he regularly travels to India to lead projects that provide sports equipment and promote inclusive development in schools. He stays connected with students, offering guidance and mentorship on various issues, fostering opportunities for growth and empowerment through sports.',
