@@ -39,13 +39,6 @@ const TeamPage = () => {
       color: 'from-purple-500 to-pink-500'
     }
   ];
->>>>
-<task_progress>
-- [x] Analyze `OurTeam.jsx` structure
-- [x] Remove Manish Keswani
-- [x] Add Kristen Hay
-- [ ] Verify changes
-</task_progress>
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900">
