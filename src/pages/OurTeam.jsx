@@ -31,15 +31,21 @@ const TeamPage = () => {
       bio: 'Damodar brings extensive experience in operations management and community outreach to Sports Forward. With a background in nonprofit management and a passion for youth development, he oversees project execution and ensures smooth operations across all initiatives. His dedication to creating sustainable impact through sports has been instrumental in expanding our reach to underserved communities.',
       color: 'from-orange-500 to-red-500'
     },
-
     {
-      name: 'Manish Keswani',
-      role: 'Chief Financial Officer',
-      image: '/images/team/manish_keswani.jpg',
-      bio: 'Manish Keswani brings a strong commitment to service, mentorship, and community development to nonprofit work. He holds a PhD in Chemical Engineering and is an entrepreneur with a career focused on leadership, problem-solving, and team development. He actively supports education and youth outreach and uses sports to promote teamwork and resilience.',
-      color: 'from-green-500 to-teal-500'
+      name: 'Kristen Hay',
+      role: 'Social Worker',
+      image: '/images/team/kristen_hay.jpg',
+      bio: 'Kristen Hay believes in the value of sports and their ability to build community, improve health, increase self-esteem, and provide recreation. In her career as a social worker she actively works with underserved populations and provides support to individuals as they identify and progress towards their goals. In her spare time she enjoys hiking, yoga, and reading.',
+      color: 'from-purple-500 to-pink-500'
     }
   ];
+>>>>
+<task_progress>
+- [x] Analyze `OurTeam.jsx` structure
+- [x] Remove Manish Keswani
+- [x] Add Kristen Hay
+- [ ] Verify changes
+</task_progress>
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900">
