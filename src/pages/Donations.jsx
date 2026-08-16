@@ -117,7 +117,7 @@ const DonationsPage = () => {
                   <img 
                      src="/images/homepage/venmo-qr.png"
                      alt="Venmo QR Code for Donations
-                    className="w-full h-auto object-contain rounded-2xl group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-auto object-contain rounded-2xl group-hover:scale-105 transition-transform duration-500
                   />
                 </div>
               </div>
