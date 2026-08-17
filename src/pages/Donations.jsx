@@ -111,49 +111,42 @@ const DonationsPage = () => {
             {/* Content Grid Inside */}
             <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
               
-              {/* Image Side */}
+              {/* QR Code Section */}
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                Scan to Donate with Zelle
+              </h2>
               <div className="order-2 md:order-1 p-12">
                 <div className="relative group">
                   <img 
-                     src="/images/homepage/venmo-qr.png"
-                     alt="Venmo QR Code for Donations
-                    className="w-full h-auto object-contain rounded-2xl group-hover:scale-105 transition-transform duration-500
+                     src="/images/homepage/venemo.png"  
+                     alt="Venmo QR Code for Donations"
+                    className="w-full h-auto object-contain rounded-2xl group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
 
-              {/* Donation Form Side */}
+              {/* Zelle Donation Card */}
               <div className="order-1 md:order-2">
                 <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-teal-400 to-orange-400 rounded-full flex items-center justify-center">
-                  <Heart className="w-10 h-10 text-white" />
+                  <DollarSign className="w-10 h-10 text-white" /> {/* Placeholder for Zelle icon */}
                 </div>
 
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-                  Ready to Make an Impact?
+                  Donate with Zelle
                 </h2>
                 <p className="text-xl text-gray-200 mb-8 text-center">
-                  Join us in empowering these young athletes with the tools they need to thrive
+                  Use our Zelle tag for seamless donations.
                 </p>
 
-                {/* PayPal Button */}
                 <div className="mb-8 text-center">
-                  <a
-                    href="https://www.paypal.com/donate/?hosted_button_id=9HZ4T95VULYEE"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full text-white font-bold text-xl shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105"
-                  >
-                    <DollarSign className="w-6 h-6" />
-                    DONATE WITH PAYPAL
-                  </a>
-                </div>
-
-                {/* PayPal Logo Placeholder */}
-                <div className="flex justify-center">
                   <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-8 py-4">
                     <div className="text-center">
-                      <div className="text-4xl mb-2">💳</div>
-                      <p className="text-gray-300 text-sm font-semibold">Secure Payment via PayPal</p>
+                      <div className="text-4xl mb-2">
+                        {/* Placeholder for Zelle logo if not found */}
+                        <DollarSign className="w-12 h-12 mx-auto" /> 
+                      </div>
+                      <p className="text-gray-300 text-sm font-semibold mt-2">Our Zelle Tag</p>
+                      <p className="text-white text-2xl font-bold mt-1">sportsforwardfoundationinc</p>
                     </div>
                   </div>
                 </div>
@@ -163,7 +156,6 @@ const DonationsPage = () => {
                   <span>100% Secure & Tax-Deductible</span>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
