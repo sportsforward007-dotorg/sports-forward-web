@@ -111,17 +111,34 @@ const DonationsPage = () => {
             {/* Content Grid Inside */}
             <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
               
-              {/* QR Code Section */}
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-                Scan to Donate with Zelle
-              </h2>
-              <div className="order-2 md:order-1 p-12">
-                <div className="relative group">
-                  <img 
-                     src="/images/homepage/venemo.png"  
-                     alt="Venmo QR Code for Donations"
-                    className="w-full h-auto object-contain rounded-2xl group-hover:scale-105 transition-transform duration-500"
-                  />
+              {/* Venmo Donation Card */}
+              <div className="order-2 md:order-1">
+                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
+                  <DollarSign className="w-10 h-10 text-white" />
+                </div>
+
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                  Donate with Venmo
+                </h2>
+                <p className="text-xl text-gray-200 mb-8 text-center">
+                  Use our Venmo handle for seamless donations.
+                </p>
+
+                <div className="mb-8 text-center">
+                  <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-8 py-4">
+                    <div className="text-center">
+                      <div className="text-4xl mb-2">
+                        <DollarSign className="w-12 h-12 mx-auto text-blue-400" />
+                      </div>
+                      <p className="text-gray-300 text-sm font-semibold mt-2">Our Venmo Handle</p>
+                      <p className="text-white text-2xl font-bold mt-1">@sportsforward007</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex items-center justify-center gap-2 text-gray-300 text-sm">
+                  <Shield className="w-4 h-4 text-blue-400" />
+                  <span>100% Secure & Tax-Deductible</span>
                 </div>
               </div>
 
