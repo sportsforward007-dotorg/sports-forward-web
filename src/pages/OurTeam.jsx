@@ -19,7 +19,7 @@ const TeamPage = () => {
     },
     {
       name: 'Raj Keswani',
-      role: 'Founder and Vice President',
+      role: 'Global Ambassador',
       image: '/images/team/raj-keswani_new.png',
       bio: 'Raj Keswani is a student at Vanderbilt University with a passion for sports, having played baseball, basketball, and football. He founded Sports Forward in 2023 and previously served as President for three years before stepping into the role of Vice President to empower younger leaders. Raj is committed to community service and increasing representation for underprivileged children through sports.',
       color: 'from-teal-500 to-blue-500'
@@ -33,7 +33,7 @@ const TeamPage = () => {
     },
     {
       name: 'Kristen Hay',
-      role: 'Social Worker',
+      role: 'Member',
       image: '/images/team/kristen_hay.jpg',
       bio: 'Kristen Hay believes in the value of sports and their ability to build community, improve health, increase self-esteem, and provide recreation. In her career as a social worker she actively works with underserved populations and provides support to individuals as they identify and progress towards their goals. In her spare time she enjoys hiking, yoga, and reading.',
       color: 'from-purple-500 to-pink-500'
