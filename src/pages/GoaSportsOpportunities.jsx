@@ -7,7 +7,7 @@ const GoaSportsOpportunities = () => {
     category: "Sports Infrastructure & Equipment",
     description: "Provided students with access to a new volleyball court, badminton sets, yoga mats, and additional sports resources, creating a dedicated space for physical activity, teamwork, and athletic development.",
     location: "Goa, India",
-    year: "2024",
+    year: "2026",
     impact: "New volleyball court and expanded sports access",
     highlights: [
       {
