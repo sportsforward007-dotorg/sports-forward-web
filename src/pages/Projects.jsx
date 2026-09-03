@@ -84,6 +84,18 @@ const ProjectsPage = () => {
       category: 'Equipment',
       galleryLink: '/odisha',
       image: '/images/projects/odisha/odisha-1.png'
+    },
+    {
+      id: 7,
+      number: '07',
+      title: 'Goa Sports Opportunities',
+      location: 'Goa, India',
+      status: 'Completed',
+      description: 'Provided students with access to a new volleyball court, badminton sets, yoga mats, and additional sports resources, creating a dedicated space for physical activity, teamwork, and athletic development.',
+      impact: 'New volleyball court and expanded sports access',
+      category: 'Equipment',
+      galleryLink: '/goa',
+      image: '/images/projects/goa hegde/PHOTO-2026-06-25-23-35-33.jpg'
     }
   ];
 
