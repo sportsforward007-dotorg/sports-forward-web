@@ -19,7 +19,7 @@ const TeamPage = () => {
     },
     {
       name: 'Raj Keswani',
-      role: 'Global Ambassador',
+      role: 'Founder - Global Ambassador',
       image: '/images/team/raj-keswani_new.png',
       bio: 'Raj Keswani is a student at Vanderbilt University with a passion for sports, having played baseball, basketball, and football. He founded Sports Forward in 2023 and previously served as President for three years before stepping into the role of Vice President to empower younger leaders. Raj is committed to community service and increasing representation for underprivileged children through sports.',
       color: 'from-teal-500 to-blue-500'
