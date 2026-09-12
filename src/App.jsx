@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs';
 import OurTeam from './pages/OurTeam';
 import OurStory from './pages/OurStory';
 import Donations from './pages/Donations';
+import Fundraisers from './pages/Fundraisers';
 import SubmitProject from './pages/SubmitProject';
 import ChandalaProject from './pages/ChandalaProject';
 import HoopsForGrowth from './pages/HoopsForGrowth';
@@ -28,6 +29,7 @@ function App() {
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/our-story" element={<OurStory />} />
         <Route path="/donations" element={<Donations />} />
+        <Route path="/fundraisers" element={<Fundraisers />} />
         <Route path="/request-project" element={<SubmitProject />} />
         <Route path="/chandala" element={<ChandalaProject />} />
         <Route path="/hoops" element={<HoopsForGrowth />} />

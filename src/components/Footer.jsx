@@ -38,6 +38,9 @@ const Footer = () => {
               <Link to="/our-story" className="block text-gray-400 hover:text-teal-400 transition-colors">
                 Our Story
               </Link>
+              <Link to="/fundraisers" className="block text-gray-400 hover:text-teal-400 transition-colors">
+                Fundraisers
+              </Link>
               <Link to="/donations" className="block text-gray-400 hover:text-teal-400 transition-colors">
                 Donate
               </Link>
