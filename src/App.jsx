@@ -15,7 +15,7 @@ import CheckmateForChange from './pages/CheckmateForChange';
 import FieldsOfOpportunity from './pages/FieldsOfOpportunity';
 import ArcheryForAll from './pages/ArcheryForAll';
 import OdishaOpportunities from './pages/OdishaOpportunities';
-import GoaSportsOpportunities from './pages/GoaSportsOpportunities';
+import KumtaSportsOpportunities from './pages/KumtaSportsOpportunities';
 
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
         <Route path="/field" element={<FieldsOfOpportunity />} />
         <Route path='/archery' element={<ArcheryForAll />} />
         <Route path='/odisha' element={<OdishaOpportunities />} />
-        <Route path='/goa' element={<GoaSportsOpportunities />} />
+        <Route path='/kumta' element={<KumtaSportsOpportunities />} />
       </Routes>
     </Router>
   );

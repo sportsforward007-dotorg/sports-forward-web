@@ -88,14 +88,14 @@ const ProjectsPage = () => {
     {
       id: 7,
       number: '07',
-      title: 'Goa Sports Opportunities',
-      location: 'Goa, India',
+      title: 'Kumta Sports Opportunities',
+      location: 'Karnataka, India',
       status: 'Completed',
-      description: 'Provided students with access to a new volleyball court, badminton sets, yoga mats, and additional sports resources, creating a dedicated space for physical activity, teamwork, and athletic development.',
-      impact: 'New volleyball court and expanded sports access',
+      description: 'Provided custom-branded sports jerseys to students at MHPS Hegde in Kumta Taluk, giving young athletes a sense of team identity, pride, and motivation to participate in sports.',
+      impact: 'Custom jerseys distributed to students at MHPS Hegde, Kumta',
       category: 'Equipment',
-      galleryLink: '/goa',
-      image: '/images/projects/goa hegde/PHOTO-2026-06-25-23-35-33.jpg'
+      galleryLink: '/kumta',
+      image: '/images/projects/goa hegde/b62c7756-42e7-4791-8045-26053afc3d8c.jpeg'
     }
   ];
 
